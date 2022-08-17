@@ -1,2 +1,2 @@
 if _name_ == '_main_':
-	welcome()
+	welcome()		#Gives the welcome message and options to login or signup
