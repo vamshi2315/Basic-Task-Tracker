@@ -1,3 +1,5 @@
+# Now we are ready to code our software. Initially, we will start by creating our sign-up function. 
+#The signup function will be taking the username by which the user is going to make his/her account and ask to set a password for that account.
 def signup():
 	print("Please enter the user details by which you want to access your account")
 	username = input("choose your username: ")
@@ -6,7 +8,8 @@ def signup():
 	print("Congratulations on signing up!\nNow you can proceed to login.\n")
 	login()
 
-
+#The log-in function will take the username and ask for the password connected to it. 
+#Once the user enters the password the function will check if the password saved in the text file is the same as that entered.
 def login():
 	print("Please enter your username and password to login to your account")
 	user_nm = input("username: ") + '\n'
