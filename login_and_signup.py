@@ -2,7 +2,7 @@ def signup():
 	print("Please enter the user details by which you want to access your account")
 	username = input("choose your username: ")
 	password = input("choose your password: ")
-	user_information(username, password)
+	user_information(username, password)		#taking user info
 	print("Congratulations on signing up!\nNow you can proceed to login.\n")
 	login()
 
@@ -27,7 +27,7 @@ def login():
 				4--Status of tasks")
 			a = input()
 
-			if a == '1':
+			if a == '1':						#lets user to choose from varous options
 				view_data(usernm)
 			elif a == '2':
 				task_add(usernm)
@@ -38,11 +38,12 @@ def login():
 			else:
 				print("Wrong input ! Please select one of the options form above mentioned i.e, either 1 or 2 or 3 or 4")
 		else:
-			print("Seems like you have entered wrong credentials.\n")
+			print("Seems like you have entered wrong credentials.\n")	#when wrong password is entered
 			print("Please enter the same login details as you have entered during your signup process")
-			login()
+			login()		#lets user to try again
 
 	except Exception as e:
 		print("Seems like you have entered wrong credentials.\n")
 		print("Please enter the same login details as you have entered during your signup process")
-		login()
+		login()		#lets user to try again
+
